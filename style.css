@@ -72,6 +72,10 @@ main p{
 
     max-width: 30.5rem;
 }
+section{
+    display: grid;
+    gap: 3.2rem;
+}
 .card{
     position: relative;
 }
