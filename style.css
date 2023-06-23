@@ -6,6 +6,8 @@
 }
 :root{
     font-size: 62.5%;
+
+    --ff: 'Staatliches', cursive;
 }
 body{
     background: #EFF1FF;   
@@ -44,7 +46,7 @@ header h1{
     font-size: 4.0rem;
     line-height: 3.4rem;
     letter-spacing: 0.2rem;
-    font-family: 'Staatliches', cursive;
+    font-family: var(--ff);
 
     background: #CBC0D3;
 
@@ -76,10 +78,14 @@ main p{
     text-align: center;
 
     max-width: 30.5rem;
+
+    animation: left 700ms;
 }
 section{
     display: grid;
     gap: 3.2rem;
+
+    animation: down 700ms;
 }
 .card{
     position: relative;
@@ -121,7 +127,7 @@ section{
     height: 35px;   
 
     font-size: 2rem;
-    font-family: 'Staatliches';
+    font-family: var(--ff);
     line-height: 3.4rem;
     letter-spacing: 0.1rem;
 
@@ -160,5 +166,25 @@ footer a{
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes left{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
