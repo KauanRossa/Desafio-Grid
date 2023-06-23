@@ -10,6 +10,11 @@
 body{
     background: #EFF1FF;    
 }
+#page{
+    max-width: 38rem;
+
+    margin: 0 auto;
+}
 header{
     background: #8E9AAF;
 
@@ -67,7 +72,9 @@ main p{
 
     max-width: 30.5rem;
 }
-
+.card{
+    position: relative;
+}
 .card img{
     object-fit: cover;
 
@@ -75,4 +82,37 @@ main p{
 
     width: 320px;
     height: 250px;
+
+    transition-property: all;
+    transition-duration: 700ms;
+
+    filter: contrast(0.8);
+}
+.card img:hover{
+    transform: scale(1.1);
+    filter: contrast(1);
+}
+.card h3{
+    position: absolute;
+
+    top: 1.6rem;
+    right: 1.6rem;
+
+    background: #FEEAFA;
+
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 112px;
+    height: 35px;   
+
+    font-size: 2rem;
+    font-family: 'Staatliches';
+    line-height: 3.4rem;
+    letter-spacing: 0.1rem;
+
+    color: #4A4E69;
 }
